@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment-06 </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .font-fam {
+            font-family: "Lato", sans-serif;
+        }
+
+        input::placeholder {
+            font-size: 20px;
+            font-weight: light;
+        }
+    </style>
+
+    <style>
+        .buttonDivStyles {
+            text-align: center;
+
+            border: 2px solid rgb(209, 207, 207);
+            padding: 20px 0px;
+        }
+
+        .buttonHover:hover {
+            background-color: rgba(14, 122, 129, 0.1);
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: rgba(14, 122, 129, 0.5);
+        }
+
+        .cardStyle {
+
+            padding: 20px;
+            border: 2px solid rgba(19, 19, 19, 0.1);
+            border-radius: 30px;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'button-bg': '#0E7A81',
+                        'button-light-color': '#0E7A81',
+                        'secondary-color': 'rgba(19, 19, 19, 0.6)'
+                    },
+                },
+
+            }
+        }
+    </script>
+</head>
+
+<body class="font-fam">
+
+    <header class="mb-28 w-10/12 mx-auto">
+
+        <nav class="flex items-center py-5 justify-between md:py-10 ">
+            <div class="icons items-center flex gap-x-3  ">
+                <div>
+                    <img class="w-full" src="images/logo.webp" alt="">
+                </div>
+                <h2 class="text-3xl font-black"> Peddy </h2>
+            </div>
+
+            <div class="menus hidden md:block">
+                <ul class="flex gap-x-6">
+                    <li><a href="" class="text-gray-500"> Home </a></li>
+                    <li><a href="" class="text-gray-500"> Shop </a></li>
+                    <li><a href="" class="text-gray-500"> Contact </a></li>
+                </ul>
+            </div>
+
+            <div class="user-logo">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/user--v1.png" alt="user--v1"
+                    class="bg-white p-2 rounded-full drop-shadow-2xl hidden md:block" />
+            </div>
+
+            <div class="dropdown md:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <i
+                        class="fa-solid border-2 text-2xl text-[#737373] bg-white py-1.5 px-3 rounded-full drop-shadow-sm fa-bars border-black"></i>
+                </div>
+                <ul tabindex="0"
+                    class="menu dropdown-content menu-sm  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                    <li><a href="" class="text-gray-500"> Home </a></li>
+                    <li><a href="" class="text-gray-500"> Shop </a></li>
+                    <li><a href="" class="text-gray-500"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <section class="banner-container mt-3 text-center">
+            <h3 class="text-secondary-color text-xl font-bold inline"> Bringing Families Together </h3> <span
+                class="text-2xl">❤️‍🔥</span>
+
+            <h1 class="text-5xl md:text-6xl mt-5 font-black mb-8"> Your Path to Adoption <br> Starts Here </h1>
+
+            <p class="md:w-1/2 mx-auto text-lg mb-5 md:mb-10"> It is a long established fact that a reader will be
+                distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                is that it has a. </p>
+
+            <div class="mb-5 md:mb-10">
+                <a href="#adopt-container" class="bg-button-bg font-bold text-xl text-white px-10 py-4 rounded-lg"> View
+                    More </a>
+            </div>
+
+            <div class="">
+                <img class="mx-auto" src="images/pet.webp" alt="">
+            </div>
+        </section>
+
+    </header>
+
+    <main class="w-10/12 mx-auto">
+
+        <section id="adopt-container" class="mb-10">
+            <h2 class="text-4xl font-black mb-6 text-center"> Adopt Your Best Friend </h2>
+            <p class="lg:w-1/2 text-center mx-auto text-md text-secondary-color mb-16"> Adopting a pet with your best
+                friend can be a rewarding experience! through profiles of dogs,cats,rabbits and other animals, each
+                looking for a family. </p>
+
+            <div id="category-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4">
+
+            </div>
+        </section>
+
+
+        <section class="mb-10">
+            <div class="heading flex gap-y-6 text-center  flex-col md:gap-y-0 md:justify-between md:flex-row  mb-8">
+                <div>
+                    <h4 class="text-2xl font-extrabold"> Best Deal For You </h4>
+                </div>
+                <div class="mb-5 md:mb-10">
+                    <a href="#adopt-container" onclick="laodSortByPrice()" id="sortBtn"
+                        class="bg-button-bg font-normal text-xl text-white px-10 py-4 rounded-lg"> Sort by Price </a>
+                </div>
+            </div>
+
+            <div id="loading" class="text-center hidden">
+                <span class="loading loading-bars loading-xs"></span>
+                <span class="loading loading-bars loading-sm"></span>
+                <span class="loading loading-bars loading-md"></span>
+                <span class="loading loading-bars loading-lg"></span>
+            </div>
+
+            <div class="cards-parent lg:flex gap-x-5">
+
+                <div id="cards-container"
+                    class="lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
+
+                </div>
+
+                <div id="liked-container"
+                    class="lg:w-1/4 border-2 border-[rgba(19, 19, 19, 0.6)] rounded-2xl grid grid-cols-2 h-fit">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class=" bg-black w-full text-white">
+        <section class="w-10/12 mx-auto py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 justify-between">
+
+            <div class="part-1">
+                <div class="icons flex gap-x-3 items-center mb-6">
+                    <div class="">
+                        <img class="w-full" src="images/logo.webp" alt="">
+                    </div>
+                    <h3 class="text-3xl font-black"> Peddy </h3>
+                </div>
+
+                <div class="leading-8 mb-4">
+
+                    <p class="text-gray-400"> Location: av. Washington 165, NY CA54003 </p>
+                    <p class="text-gray-400"> Phone: +31 85 964 47 25 </p>
+                    <p class="text-gray-400"> Email: info@yourdomein.com </p>
+                    <p class="text-gray-400"> Openings hours: 9.00 AM - 5.00 PM </p>
+                </div>
+
+
+                <div class="flex gap-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                        <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+                        <path fill="#fff"
+                            d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
+                        </path>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                        <path fill="#212121" fill-rule="evenodd"
+                            d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28	c2.209,0,4,1.791,4,4v28C42,40.209,40.209,42,38,42z"
+                            clip-rule="evenodd"></path>
+                        <path fill="#fff"
+                            d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z">
+                        </path>
+                        <polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"></polygon>
+                        <polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"></polygon>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                        <path fill="#FF3D00"
+                            d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                        </path>
+                        <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fd5"></stop>
+                            <stop offset=".328" stop-color="#ff543f"></stop>
+                            <stop offset=".348" stop-color="#fc5245"></stop>
+                            <stop offset=".504" stop-color="#e64771"></stop>
+                            <stop offset=".643" stop-color="#d53e91"></stop>
+                            <stop offset=".761" stop-color="#cc39a4"></stop>
+                            <stop offset=".841" stop-color="#c837ab"></stop>
+                        </radialGradient>
+                        <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                        </path>
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                            gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#4168c9"></stop>
+                            <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                        </radialGradient>
+                        <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                        </path>
+                        <path fill="#fff"
+                            d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                        </path>
+                        <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                        <path fill="#fff"
+                            d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="part-2">
+                <h3 class="mb-8 text-xl font-bold"> Useful Links </h3>
+                <ul>
+                    <li><a href="#" class="text-gray-400"> Home </a></li>
+                    <li><a href="#" class="text-gray-400"> About Us </a></li>
+                    <li><a href="#" class="text-gray-400"> Animals </a></li>
+                    <li><a href="#" class="text-gray-400"> Foundation </a></li>
+                    <li><a href="#" class="text-gray-400"> Contacts </a></li>
+                </ul>
+            </div>
+
+            <div class="part-3">
+                <h3 class="text-xl font-bold mb-8"> Drop a Message </h3>
+                <input type="email" placeholder="Enter your email" class="
+                bg-[#1F1F1F] p-4 rounded-xl mb-5"><br>
+                <div class="flex justify-center">
+                    <button class="btn w-full bg-button-bg border-none text-lg text-white"> Subscribe </button>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <button id="showModalData" class="hidden btn" onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content">
+
+            </div>
+            <div class="modal-action flex flex-col items-center">
+                <form method="dialog" class="">
+
+                    <button class="btn px-40 btn-lg lg:px-52 bg-teal-500 text-xl text-white font-black">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    <button id="showModalData2" class="hidden btn" onclick="customModal2.showModal()">open modal</button>
+    <dialog id="customModal2" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content-2 text-center">
+                <p class="text-center"> <i class="fa-solid fa-handshake text-5xl"></i> </p>
+                <h2 class="text-2xl font-extrabold text-center"> Congratulations!! </h2>
+                <p class="teext-lg text-gray-400 text-center"> You perfectly adopted the pet!! </p>
+                <p id="countBox" class="text-3xl font-black text-center mt-3"> </p>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+
+                    <button class="hidden btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
